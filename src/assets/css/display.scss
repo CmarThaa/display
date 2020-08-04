@@ -1,0 +1,20 @@
+#display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  header {
+    flex: 0;
+    background: black;
+    height: 200px;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    flex: 0;
+    background: #0a76a4;
+    height: 200px;
+  }
+}
