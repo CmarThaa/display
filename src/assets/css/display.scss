@@ -1,19 +1,65 @@
+@import "common";
 #display {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
+
   header {
-    flex: 0;
-    background: black;
-    height: 200px;
+    flex: none;
+    background: #062a50;
+    height: 330px;
+
+    .header-wrap {
+      margin: 0 auto;
+      position: relative;
+      max-width: 1220px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #logo {
+      height: 46px;
+      line-height: 46px;
+      margin-top: 36px;
+    }
+
+    #nav {
+      width: 716px;
+      display: flex;
+      margin-top: 34px;
+    }
+
+    .menu {
+      height: $displayMenuHeight;
+      line-height: $displayMenuHeight;
+      padding: 0 30px;
+      border-radius: 5px;
+      margin: 0 2px;
+      position: relative;
+      @include menu;
+    }
+
+  }
+
+  #other {
+    position: fixed;
+    width: 100%;
+    top: 84px;
+    #subProducts {
+      width: 98%;
+      z-index: 2;
+      background: black;
+      height: 200px;
+    }
   }
 
   main {
-    flex: 1;
+    flex: auto;
   }
 
   footer {
-    flex: 0;
+    flex: none;
     background: #0a76a4;
     height: 200px;
   }
