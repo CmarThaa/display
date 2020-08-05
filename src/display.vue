@@ -5,14 +5,13 @@
                 <router-link to="/"><div id="logo">123</div></router-link>
                 <div id="nav">
                     <div class="menu icon"
-                         id="products"
-                         @mouseout="hoverMenuApps=false"
-                         @mouseenter="hoverMenuApps = true">
-                        Products
+                         id="products">
+                        <span>Products</span>
+                        <div id="subProducts"></div>
                     </div>
                     <div class="menu">Contact</div>
                 </div>
-            </div>`
+            </div>
         </header>
         <main>
             <router-view></router-view>
@@ -21,7 +20,7 @@
             <div id="footBottom"></div>
         </footer>
         <div id="other">
-            <div id="subProducts" v-if="hoverMenuApps"></div>
+
         </div>
     </div>
 </template>

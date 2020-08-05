@@ -28,6 +28,7 @@
       width: 716px;
       display: flex;
       margin-top: 34px;
+      position: relative;
     }
 
     .menu {
@@ -42,18 +43,6 @@
 
   }
 
-  #other {
-    position: fixed;
-    width: 100%;
-    top: 84px;
-    #subProducts {
-      width: 98%;
-      z-index: 2;
-      background: black;
-      height: 200px;
-    }
-  }
-
   main {
     flex: auto;
   }
@@ -63,4 +52,19 @@
     background: #0a76a4;
     height: 200px;
   }
+}
+
+#subProducts {
+  position: fixed;
+  width: 96vw;
+  left: 1vw;
+  top: 85px;
+  z-index: 2;
+  background: black;
+  visibility: hidden;
+  height: 200px;
+}
+
+#products:hover #subProducts{
+  visibility: visible;
 }
