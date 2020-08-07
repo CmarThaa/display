@@ -2,14 +2,14 @@
     <div id="display">
         <header>
             <div class="header-wrap">
-                <router-link to="/"><div id="logo">123</div></router-link>
+                <router-link to="/"><div id="logo"><img src="./assets/img/logo.png" alt=""></div></router-link>
                 <div id="nav">
                     <div class="menu icon"
                          id="products">
-                        <span>Products</span>
+                        <span>项目原型展示</span>
                         <div id="subProducts"></div>
                     </div>
-                    <div class="menu">Contact</div>
+                    <div class="menu">Profile</div>
                 </div>
             </div>
         </header>

@@ -4,6 +4,10 @@
 }
 
 $displayMenuHeight: 50px;
+$blockBackColor: #0A2239;
+$contentBackColor: white;
+$subBlockBackColor: #1D84B5;
+$simpleButtonBg: #bfbdbd;
 
 @mixin menu {
   color: white;
